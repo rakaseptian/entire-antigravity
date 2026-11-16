@@ -1,0 +1,1 @@
+Buatkan website sederhana dengan HTML, CSS, dan JavaScript. Tampilkan halaman utama bertuliskan "Entire AI Test" dengan desain modern dan responsif. Simpan semua file ke folder proyek yang sedang terbuka.
