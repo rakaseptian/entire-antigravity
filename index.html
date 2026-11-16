@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entire AI Test - Platform Web Modern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Glow & Grid Effect -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <span class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </span>
+        <span class="brand-text">Entire<span class="highlight">AI</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#fitur" class="nav-link">Fitur</a>
+        <a href="#playground" class="nav-link">Playground</a>
+        <a href="#statistik" class="nav-link">Statistik</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-icon" aria-label="Ganti Tema">
+          <!-- Sun Icon (for light mode) -->
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (for dark mode) -->
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#playground" class="btn btn-primary btn-sm">Mulai Tes</a>
+
+        <button id="mobileMenuBtn" class="btn-icon mobile-menu-btn" aria-label="Menu Navigasi">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="badge-wrapper">
+          <span class="badge">
+            <span class="badge-dot"></span>
+            Generasi Berikutnya • Kecerdasan Web
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Entire AI Test
+        </h1>
+
+        <p class="hero-subtitle">
+          Selamat datang di platform demonstrasi web modern, responsif, dan interaktif. Dibuat dengan fondasi HTML5 murni, CSS3 kustom dengan efek Glassmorphism, serta JavaScript modern yang mulus.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#playground" class="btn btn-primary btn-lg">
+            <span>Coba Sekarang</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#fitur" class="btn btn-secondary btn-lg">
+            <span>Pelajari Fitur</span>
+          </a>
+        </div>
+
+        <!-- Floating UI / Code Showcase Card -->
+        <div class="hero-card-preview">
+          <div class="card-glass code-card">
+            <div class="card-header-bar">
+              <div class="dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="code-title">entire-ai-status.json</span>
+              <span class="status-indicator">Online</span>
+            </div>
+            <pre class="code-content"><code><span class="code-keyword">const</span> <span class="code-var">entireSystem</span> = {
+  <span class="code-prop">project</span>: <span class="code-str">"Entire AI Test"</span>,
+  <span class="code-prop">status</span>: <span class="code-str">"Operational"</span>,
+  <span class="code-prop">architecture</span>: [<span class="code-str">"HTML5"</span>, <span class="code-str">"CSS3"</span>, <span class="code-str">"Vanilla JS"</span>],
+  <span class="code-prop">responsive</span>: <span class="code-bool">true</span>,
+  <span class="code-prop">latency</span>: <span class="code-num">18</span>, <span class="code-comment">// ms</span>
+  <span class="code-func">runTest</span>: () => <span class="code-str">"🚀 Seluruh sistem siap beroperasi dengan mulus!"</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="fitur" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Fitur Unggulan</h2>
+          <p class="section-desc">Dirancang dengan teliti untuk menghadirkan performa secepat kilat dan visual yang memukau di seluruh perangkat.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card card-glass">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3>Performa Ringan & Cepat</h3>
+            <p>Dibangun tanpa framework eksternal yang berat. Waktu muat hampir instan dan rendering 60 FPS di layar modern.</p>
+          </div>
+
+          <div class="feature-card card-glass">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Responsif Dinamis</h3>
+            <p>Tampilan fleksibel yang secara otomatis menyesuaikan diri untuk ponsel cerdas, tablet, laptop, dan monitor ultra-wide.</p>
+          </div>
+
+          <div class="feature-card card-glass">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <h3>Mode Terang & Gelap</h3>
+            <p>Transisi warna halus dengan switch tema satu klik yang secara cerdas menyimpan preferensi pengguna di browser.</p>
+          </div>
+
+          <div class="feature-card card-glass">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3>Desain Glassmorphism</h3>
+            <p>Sentuhan estetika futuristik dengan efek frosted glass, gradien neon elegan, dan tata letak hierarki yang jelas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive AI Playground -->
+    <section id="playground" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Interaktif AI Playground</h2>
+          <p class="section-desc">Uji coba simulasi prompt AI interaktif langsung di halaman ini. Pilih contoh perintah atau tulis pertanyaanmu sendiri!</p>
+        </div>
+
+        <div class="playground-card card-glass">
+          <div class="playground-presets">
+            <span class="preset-label">Coba rekomendasi:</span>
+            <button class="chip" data-prompt="Apa itu Entire AI Test dan bagaimana cara kerjanya?">Tentang Entire AI</button>
+            <button class="chip" data-prompt="Jelaskan teknologi apa saja yang digunakan pada website ini.">Teknologi Web</button>
+            <button class="chip" data-prompt="Buatkan tips singkat menulis kode CSS yang rapi dan terstruktur.">Tips CSS</button>
+            <button class="chip" data-prompt="Berikan kata mutiara tentang masa depan kecerdasan buatan.">Kutipan AI</button>
+          </div>
+
+          <div class="chat-window" id="chatWindow">
+            <div class="chat-message bot-message">
+              <div class="avatar">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"></path>
+                  <rect x="4" y="8" width="16" height="12" rx="2"></rect>
+                  <circle cx="9" cy="13" r="1.5"></circle>
+                  <circle cx="15" cy="13" r="1.5"></circle>
+                  <path d="M10 17h4"></path>
+                </svg>
+              </div>
+              <div class="message-bubble">
+                <p>Halo! Saya adalah asisten simulasi <strong>Entire AI Test</strong>. Pilih salah satu tombol di atas atau ketik sesuatu di bawah untuk melihat respons interaktif dengan efek ketik real-time!</p>
+              </div>
+            </div>
+          </div>
+
+          <form id="promptForm" class="prompt-form">
+            <div class="input-group">
+              <input 
+                type="text" 
+                id="promptInput" 
+                placeholder="Ketik pertanyaan atau perintah untuk Entire AI di sini..." 
+                autocomplete="off"
+                required
+              />
+              <button type="submit" id="sendBtn" class="btn btn-primary">
+                <span>Kirim</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="statistik" class="section stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item card-glass">
+            <div class="stat-number" data-target="99.9">0</div>
+            <div class="stat-suffix">%</div>
+            <p class="stat-label">Keandalan Sistem</p>
+          </div>
+          <div class="stat-item card-glass">
+            <div class="stat-number" data-target="15">0</div>
+            <div class="stat-suffix">ms</div>
+            <p class="stat-label">Kecepatan Render</p>
+          </div>
+          <div class="stat-item card-glass">
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-suffix">%</div>
+            <p class="stat-label">Responsif Mobile</p>
+          </div>
+          <div class="stat-item card-glass">
+            <div class="stat-number" data-target="0">0</div>
+            <div class="stat-suffix">dep</div>
+            <p class="stat-label">Zero Dependency</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="section">
+      <div class="container">
+        <div class="about-card card-glass">
+          <div class="about-content">
+            <div class="about-badge">Tentang Proyek</div>
+            <h2>Mengenai Entire AI Test</h2>
+            <p>
+              Proyek ini adalah implementasi website modern murni (Vanilla HTML, CSS, dan JavaScript) yang dirancang untuk mendemonstrasikan keindahan estetika antarmuka saat ini: kontras yang tajam, tipografi terbaca dengan jelas, tata letak adaptif, serta interaktivitas responsif tanpa beban pustaka tambahan.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">HTML5 Semantic</span>
+              <span class="tag">CSS Custom Properties</span>
+              <span class="tag">Flexbox & Grid</span>
+              <span class="tag">Glassmorphism</span>
+              <span class="tag">Vanilla JavaScript (ES6+)</span>
+              <span class="tag">Local Storage State</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="brand footer-brand">
+          <span class="brand-text">Entire<span class="highlight">AI</span> Test</span>
+        </div>
+        <p class="footer-sub">Dirancang dengan presisi & standar web modern terkini.</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="system-status">
+          <span class="status-dot"></span>
+          <span>Sistem Berjalan Normal</span>
+        </div>
+        <p class="copyright">&copy; <span id="currentYear">2026</span> Entire AI Test. Hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
